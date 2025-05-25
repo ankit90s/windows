@@ -1,0 +1,19 @@
+Restore Old Context menus in Windows 11:-
+reg.exe add "HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32" /f /ve
+Restart File Explorer or your computer for the changes to take effect.
+
+
+Restore Modern Context menus in Windows 11:-
+reg.exe delete "HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}" /f
+Restart the File Explorer or Computer for the changes to take effect.
+
+Office and windows activation to be run in powershell of terminal not cmd
+irm https://get.activated.win | iex
+
+Script Execution Policy
+set-ExecutionPolicy RemoteSigned -Scope LocalMachine
+
+Enable ultimate performance
+powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61
+
+
