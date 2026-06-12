@@ -19,4 +19,6 @@ powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61
 Backup all installed drivers
 dism /online /export-driver /destination:D:\DriverBackup
 
+Restore Backed Up drivers
+pnputil /add-driver D:\DriverBackup\*.inf /subdirs /install
 
